@@ -13,7 +13,7 @@ const Page = async () => {
 
   return (
     <section>
-      <h1 className="text-center">The Hub for Every Dev <br/> Event You Can't Miss</h1>
+      <h1 className="text-center">The Hub for Every Dev <br /> Event You Can't Miss</h1>
       <p className="text-center mt-5">Hackathons, Meetups, and Conferences, All in One Place</p>
 
       <ExploreBtn />
@@ -24,7 +24,7 @@ const Page = async () => {
         <ul className="events">
           {events && events.length > 0 && events.map((event: IEvent) => (
             <li key={event.title} className="list-none">
-              <EventCard { ...event} />
+              <EventCard {...event} />
             </li>
           ))}
         </ul>
@@ -33,4 +33,4 @@ const Page = async () => {
   )
 }
 
-export default Page
+export default Page;
